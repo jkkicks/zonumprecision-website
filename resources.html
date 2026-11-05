@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,9 +21,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/styles.css" />
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -32,7 +29,7 @@
       <div class="container nav-inner">
         <a class="brand" href="/" aria-label="Zonum Precision home">
           <img src="/assets/favicon.png" alt="" width="30" height="30" />
-          <span class="brand-word">Zonum<span>Precision</span></span>
+          <span class="brand-word">Zonum <span>Precision</span></span>
         </a>
         <ul class="nav-links" id="nav-links">
           <li><a href="/#machining">Machining</a></li>
@@ -55,8 +52,8 @@
     <main id="main">
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow">Resources · Open source</p>
-          <h1>Free tools from<br />the <span class="text-orange">shop floor.</span></h1>
+          <p class="eyebrow">Open source</p>
+          <h1>Shop tools I've<br />published</h1>
           <p class="lead">
             Software I've written to solve real problems on my own machines, published so other
             machinists and shop builders don't have to start from scratch. Everything here is free.
@@ -67,32 +64,20 @@
 
       <section class="section" style="padding-top: 8px" aria-label="Resource library">
         <div class="container">
-          <div class="filters" role="group" aria-label="Filter resources" data-filters>
-            <button type="button" aria-pressed="true" data-filter="all">All<span class="count"></span></button>
-            <button type="button" aria-pressed="false" data-filter="fusion">Autodesk Fusion<span class="count"></span></button>
-            <button type="button" aria-pressed="false" data-filter="linuxcnc">LinuxCNC<span class="count"></span></button>
-            <button type="button" aria-pressed="false" data-filter="software">Dev tooling<span class="count"></span></button>
-          </div>
-
           <div class="res-list">
-            <article class="res-row" data-tags="fusion">
+            <article class="res-row">
               <div class="res-media">
                 <img src="/assets/deburr-gallery-freeform-pocket.webp" alt="Deburr toolpath following the rim of a freeform pocket in Fusion" loading="lazy" width="1200" height="800" />
               </div>
               <div class="res-body">
-                <div class="res-meta"><span class="badge is-alpha">v0.1.0 alpha</span><span class="badge">Fusion add-in</span><span class="badge">MIT</span></div>
+                <div class="res-meta"><span class="badge">github.com/jkkicks/Fusion-Free-Deburr · MIT · release v0.1.0-alpha.1, Nov 2026 · alpha — simulate before you cut</span></div>
                 <h2>Fusion Free Deburr</h2>
-                <p class="lead" style="font-size: 16px; margin-top: 6px">
+                <p>
                   Free 3-axis deburring toolpaths for Autodesk Fusion. Select edges, choose a ball or
-                  lollipop end mill, set the edge-break width, and generate. Edit the operation any
-                  time with right-click → Edit Deburr.
+                  lollipop end mill, set the edge-break width, and generate. Lollipop mills can reach
+                  undercut rims; the add-in checks the cutter against the part and fixtures before it
+                  writes the toolpath. Right-click an operation and choose Edit Deburr to change it later.
                 </p>
-                <ul class="res-details">
-                  <li>Ball &amp; lollipop mills</li>
-                  <li>Undercut rims with lollipops</li>
-                  <li>Collision checks vs. part &amp; fixtures</li>
-                  <li>Built on Fusion's native Trace</li>
-                </ul>
                 <div class="res-links">
                   <a class="btn btn-primary btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr/releases" target="_blank" rel="noopener">Download</a>
                   <a class="btn btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr" target="_blank" rel="noopener">GitHub</a>
@@ -100,124 +85,51 @@
               </div>
             </article>
 
-            <article class="res-row" data-tags="linuxcnc software">
-              <div class="res-media is-code">
-<pre aria-hidden="true"><span class="t-dim">$</span> pip install cnckit[api]
-
-<span class="t-blu">from</span> cnckit.core <span class="t-blu">import</span> Machine
-m = Machine(simulate=<span class="t-yel">True</span>)</pre>
-              </div>
+            <article class="res-row res-row--text">
               <div class="res-body">
-                <div class="res-meta"><span class="badge is-active">Docs live</span><span class="badge">Python</span><span class="badge">MIT</span></div>
+                <div class="res-meta"><span class="badge">github.com/jkkicks/cnckit · MIT · pip install cnckit</span></div>
                 <h2>cnckit</h2>
-                <p class="lead" style="font-size: 16px; margin-top: 6px">
-                  A lightweight, modular Python framework for job queuing, scheduling, and automation
-                  around LinuxCNC. Start with the dependency-free core and add only the integrations
-                  you need.
+                <p>
+                  A modular Python framework for job queuing, scheduling, and automation around
+                  LinuxCNC. The core has no dependencies — a FIFO/LIFO/priority queue, a scheduler
+                  with pause and resume, and a simulation mode so you can develop away from the
+                  machine. REST, MQTT, WebSocket, and ROS2 integrations are optional installs.
                 </p>
-                <ul class="res-details">
-                  <li>FIFO / LIFO / priority job queue</li>
-                  <li>Scheduler with pause &amp; resume</li>
-                  <li>Simulation mode</li>
-                  <li>REST, MQTT, WebSocket, ROS2</li>
-                </ul>
                 <div class="res-links">
                   <a class="btn btn-primary btn-sm" href="/cnckit/">Read the docs</a>
                   <a class="btn btn-sm" href="https://github.com/jkkicks/cnckit" target="_blank" rel="noopener">GitHub</a>
                 </div>
               </div>
             </article>
-
-            <article class="res-row" data-tags="linuxcnc">
-              <div class="res-media">
-                <div class="res-icon">
-                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6">
-                    <circle cx="32" cy="32" r="20" />
-                    <circle cx="32" cy="32" r="8" stroke="#c9a7ff" />
-                    <path d="M32 6v8M32 50v8M6 32h8M50 32h8" />
-                    <path d="M32 24v-4" stroke="#c9a7ff" stroke-linecap="round" />
-                  </svg>
-                </div>
-              </div>
-              <div class="res-body">
-                <div class="res-meta"><span class="badge is-poc">Proof of concept</span><span class="badge">Servo drives</span></div>
-                <h2>1500MX spindle hold</h2>
-                <p class="lead" style="font-size: 16px; margin-top: 6px">
-                  A standalone proof of concept for holding spindle position in cyclic synchronous
-                  position (CSP) mode on an SV670N servo drive, built for a prototype Tormach 1500MX.
-                </p>
-                <ul class="res-details">
-                  <li>SV670N drive</li>
-                  <li>CSP mode</li>
-                  <li>Tormach 1500MX</li>
-                </ul>
-                <div class="res-links">
-                  <a class="btn btn-sm" href="https://github.com/jkkicks/1500mx-spindle-hold" target="_blank" rel="noopener">GitHub</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="res-row" data-tags="fusion">
-              <div class="res-media">
-                <div class="res-icon">
-                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6">
-                    <rect x="14" y="10" width="36" height="44" rx="3" />
-                    <path d="M22 22h20M22 30h20M22 38h12" />
-                    <path d="M40 40l4 4 8-8" stroke="#f8991c" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </div>
-              <div class="res-body">
-                <div class="res-meta"><span class="badge">Fork</span><span class="badge">Fusion tool library</span></div>
-                <h2>Tool Library Audit</h2>
-                <p class="lead" style="font-size: 16px; margin-top: 6px">
-                  Print a clean audit sheet of a Fusion tool library, handy for checking the tools in
-                  your library against what's actually in the carousel. Fork of
-                  <a href="https://github.com/jspeceng/Tool-Audit" target="_blank" rel="noopener">jspeceng/Tool-Audit</a>.
-                </p>
-                <ul class="res-details">
-                  <li>Fusion tool libraries</li>
-                  <li>Printable sheet</li>
-                </ul>
-                <div class="res-links">
-                  <a class="btn btn-sm" href="https://github.com/jkkicks/Tool-Audit" target="_blank" rel="noopener">GitHub</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="res-row" data-tags="software">
-              <div class="res-media is-code">
-<pre aria-hidden="true"><span class="t-dim">$</span> git clone remix-drizzle-template
-<span class="t-dim">$</span> docker compose up
-<span class="t-grn">✓</span> db migrated
-<span class="t-grn">✓</span> app on :3000</pre>
-              </div>
-              <div class="res-body">
-                <div class="res-meta"><span class="badge">Template</span><span class="badge">TypeScript</span></div>
-                <h2>Remix + Drizzle template</h2>
-                <p class="lead" style="font-size: 16px; margin-top: 6px">
-                  A drop-in starting point for quick web apps: Remix, Drizzle ORM, and TypeScript, with
-                  automated CI/CD and Docker builds wired up from the first commit.
-                </p>
-                <ul class="res-details">
-                  <li>Remix</li>
-                  <li>Drizzle ORM</li>
-                  <li>Docker CI/CD</li>
-                </ul>
-                <div class="res-links">
-                  <a class="btn btn-sm" href="https://github.com/jkkicks/Remix-Drizzle-Template" target="_blank" rel="noopener">GitHub</a>
-                </div>
-              </div>
-            </article>
           </div>
 
-          <div class="submit-idea">
-            <div>
-              <h2>Need something that doesn't exist yet?</h2>
-              <p>If a shop tool or Fusion workflow is costing you time, tell me about it. It might become the next release, or a project.</p>
+          <h2 class="h2-sm" style="margin: 44px 0 6px">Also on GitHub</h2>
+          <div class="also-list">
+            <div class="also-row">
+              <h3>1500MX spindle hold</h3>
+              <p>Proof of concept: holding spindle position in CSP mode on an SV670N drive, for a prototype Tormach 1500MX. No releases — read the code.</p>
+              <a class="btn btn-sm" href="https://github.com/jkkicks/1500mx-spindle-hold" target="_blank" rel="noopener">GitHub</a>
+              <span class="mono">Updated Oct 2026</span>
             </div>
-            <a class="btn btn-primary" href="/#contact" data-mode-link="software">Tell me what you need</a>
+            <div class="also-row">
+              <h3>Tool Library Audit</h3>
+              <p>Prints an audit sheet of a Fusion tool library, for checking the library against what's actually in the carousel. Fork of jspeceng/Tool-Audit.</p>
+              <a class="btn btn-sm" href="https://github.com/jkkicks/Tool-Audit" target="_blank" rel="noopener">GitHub</a>
+              <span class="mono">Fork · Updated Aug 2026</span>
+            </div>
+            <div class="also-row">
+              <h3>Remix + Drizzle template</h3>
+              <p>The template I start web apps from when I don't want to redo the same setup: Remix, Drizzle ORM, TypeScript, Docker builds in CI.</p>
+              <a class="btn btn-sm" href="https://github.com/jkkicks/Remix-Drizzle-Template" target="_blank" rel="noopener">GitHub</a>
+              <span class="mono">Updated Nov 2025</span>
+            </div>
           </div>
+
+          <p class="note-line">
+            Missing a tool? If a Fusion workflow or a bit of shop software is costing you time,
+            <a href="mailto:jacob@zonumprecision.com" class="text-orange">email me</a> — if it's
+            useful beyond my shop, it may end up here.
+          </p>
         </div>
       </section>
     </main>
@@ -226,8 +138,8 @@ m = Machine(simulate=<span class="t-yel">True</span>)</pre>
       <div class="container">
         <div class="footer-grid">
           <div>
-            <a class="brand" href="/"><img src="/assets/favicon.png" alt="" width="30" height="30" /><span class="brand-word">Zonum<span>Precision</span></span></a>
-            <p>Precision CNC machined parts and precision software, from one engineer who does both.</p>
+            <a class="brand" href="/"><img src="/assets/favicon.png" alt="" width="30" height="30" /><span class="brand-word">Zonum <span>Precision</span></span></a>
+            <p>CNC parts and shop software. One person: Jacob.</p>
           </div>
           <div>
             <h4>Services</h4>
@@ -258,7 +170,7 @@ m = Machine(simulate=<span class="t-yel">True</span>)</pre>
         </div>
         <div class="footer-bottom">
           <span>© <span data-year>2026</span> Zonum Precision</span>
-          <span>Measured twice. Cut once. Shipped clean.</span>
+          <span>Measure twice, cut once.</span>
         </div>
       </div>
     </footer>

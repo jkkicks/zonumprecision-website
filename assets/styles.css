@@ -1683,6 +1683,12 @@ h3 {
   margin-top: 28px;
 }
 
+.res-browse {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .footer ul a {
   display: inline-flex;
   align-items: center;

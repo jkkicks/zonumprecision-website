@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/styles.css?v=5" />
+    <link rel="stylesheet" href="/assets/styles.css?v=6" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -217,7 +217,7 @@
 
           <div class="subtract reveal">
             <a href="https://subtractmanufacturing.com" target="_blank" rel="noopener" aria-label="Subtract Manufacturing">
-              <img class="subtract-logo" src="/assets/subtract.png" alt="Subtract Manufacturing logo" width="132" height="81" />
+              <img class="subtract-logo" src="/assets/subtract-logo.png" alt="Subtract Manufacturing logo" width="132" height="81" />
             </a>
             <div>
               <h3>Order through the Subtract Manufacturing network</h3>
@@ -299,52 +299,58 @@
           </div>
 
           <div class="res-grid">
-            <article class="res-card is-featured reveal">
+            <article class="res-card reveal">
               <div class="res-media">
                 <img src="/assets/deburr-gallery-varying-z-perimeter-side.webp" alt="Fusion Free Deburr toolpath following a perimeter edge at varying height" loading="lazy" width="1400" height="800" />
               </div>
               <div class="res-body">
-                <div class="res-meta"><span class="badge">Fusion add-in · MIT · v0.1.0-alpha.1, Nov 2026</span></div>
+                <div class="res-meta"><span class="badge">Fusion add-in · MIT · v0.1.0-alpha.1</span></div>
                 <h3>Fusion Free Deburr</h3>
-                <p>Free 3-axis deburring toolpaths for Autodesk Fusion using ball and lollipop end mills. Pick edges, choose a tool, set the edge-break width, and it builds the toolpath with collision checks against the part and fixtures.</p>
+                <p>Free 3-axis deburring toolpaths for Autodesk Fusion with ball and lollipop end mills. Pick edges, set the edge-break width, generate.</p>
                 <div class="res-links">
-                  <a class="btn btn-primary btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr/releases" target="_blank" rel="noopener">Download release</a>
+                  <a class="btn btn-primary btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr/releases" target="_blank" rel="noopener">Download</a>
                   <a class="btn btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr" target="_blank" rel="noopener">GitHub</a>
                 </div>
               </div>
             </article>
 
             <article class="res-card reveal">
+              <div class="res-media">
+                <img src="/assets/cnckit-docs.webp" alt="The cnckit documentation homepage" loading="lazy" width="900" height="600" />
+              </div>
               <div class="res-body">
-                <div class="res-meta"><span class="badge">Python · LinuxCNC · MIT · pip install cnckit</span></div>
+                <div class="res-meta"><span class="badge">Python · LinuxCNC · MIT</span></div>
                 <h3>cnckit</h3>
-                <p>A modular Python framework for job queuing, scheduling, and automation around LinuxCNC, with optional REST, MQTT, and WebSocket integrations.</p>
+                <p>A modular Python framework for job queuing, scheduling, and automation around LinuxCNC. Install it with <span class="mono">pip install cnckit</span>.</p>
                 <div class="res-links">
                   <a class="btn btn-primary btn-sm" href="/cnckit/">Read the docs</a>
                   <a class="btn btn-sm" href="https://github.com/jkkicks/cnckit" target="_blank" rel="noopener">GitHub</a>
                 </div>
               </div>
             </article>
+
+            <article class="res-card reveal">
+              <div class="res-media">
+                <img src="/assets/toolaudit.webp" alt="The Tool Library Audit web app" loading="lazy" width="900" height="563" />
+              </div>
+              <div class="res-body">
+                <div class="res-meta"><span class="badge">Fusion tool library · single-file web app</span></div>
+                <h3>Tool Library Audit</h3>
+                <p>Turns a Fusion tool library CSV export into a printable audit sheet, so you can check the library against what's actually in the carousel.</p>
+                <div class="res-links">
+                  <a class="btn btn-primary btn-sm" href="https://github.com/jkkicks/Tool-Audit" target="_blank" rel="noopener">GitHub</a>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <div class="gallery reveal">
-            <figure>
-              <img src="/assets/deburr-gallery-ridge-saddle-holes.webp" alt="Deburr toolpaths on holes drilled into a curved ridge" loading="lazy" width="1200" height="800" />
-              <figcaption>Holes on a curved ridge — Fusion Free Deburr</figcaption>
-            </figure>
-            <figure>
-              <img src="/assets/deburr-gallery-holes-normal-to-25deg-slope.webp" alt="Deburr toolpaths on holes drilled normal to a 25-degree sloped face" loading="lazy" width="1200" height="800" />
-              <figcaption>Holes normal to a 25° slope — Fusion Free Deburr</figcaption>
-            </figure>
-          </div>
-
-          <div class="res-more reveal">
-            <span>Also published: a Fusion tool-library audit sheet, and the template I start web apps from.</span>
+          <div class="res-browse reveal">
             <a class="btn" href="/resources.html">
               Browse all resources
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4" /></svg>
             </a>
           </div>
+
         </div>
       </section>
 
@@ -591,6 +597,6 @@
     </footer>
 
     <div class="toast" role="status" aria-live="polite" data-toast></div>
-    <script src="/assets/main.js?v=5" defer></script>
+    <script src="/assets/main.js?v=6" defer></script>
   </body>
 </html>

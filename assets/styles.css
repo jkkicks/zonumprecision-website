@@ -387,6 +387,52 @@ h3 {
   margin-top: 36px;
 }
 
+.hero-note {
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: var(--dim);
+}
+
+.hero-note a {
+  color: var(--muted);
+}
+
+.hero-proof {
+  list-style: none;
+  margin: 36px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 28px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+
+.hero-proof li {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-proof li::before {
+  content: "✓";
+  color: var(--orange);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.hero-proof a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--line-2);
+}
+
+@media (max-width: 640px) {
+  .hero-proof {
+    grid-template-columns: 1fr;
+  }
+}
+
 .hero-meta {
   display: flex;
   flex-wrap: wrap;

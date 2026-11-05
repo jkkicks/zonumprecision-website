@@ -658,7 +658,8 @@ h3 {
 }
 
 .subtract-logo {
-  width: 96px;
+  width: 132px;
+  height: auto;
   display: block;
 }
 

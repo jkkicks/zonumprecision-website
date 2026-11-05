@@ -3,45 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resources · Zonum Precision</title>
+    <title>Free Open-Source Tools for CNC Shops | Zonum Precision</title>
     <meta
       name="description"
-      content="Free, open-source tools for machinists and shop software from Zonum Precision: cnckit for LinuxCNC, Fusion Free Deburr, and more."
+      content="Fusion Free Deburr toolpaths, cnckit for LinuxCNC job queues, a Fusion tool library audit sheet, and a web-app starter. Free on GitHub."
     />
-    <meta name="theme-color" content="#0a0c0f" />
-    <link rel="canonical" href="https://zonumprecision.com/resources.html" />
-    <link rel="icon" type="image/png" href="/assets/favicon.png" />
-    <meta property="og:title" content="Resources · Zonum Precision" />
-    <meta property="og:description" content="Open-source tools for CNC machinists: cnckit, Fusion Free Deburr, and more." />
-    <meta property="og:image" content="https://zonumprecision.com/assets/og.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/assets/styles.css?v=7" />
+    <meta name="theme-color" content="#eceeef" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://zonumprecision.com/resources" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="/assets/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zonum Precision" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Free shop tools: Fusion Free Deburr, cnckit | Zonum Precision" />
+    <meta property="og:description" content="Open-source tools for CNC machinists: Fusion Free Deburr, cnckit, Tool Library Audit." />
+    <meta property="og:url" content="https://zonumprecision.com/resources" />
+    <meta property="og:image" content="https://zonumprecision.com/assets/og.png?v=3" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Zonum Precision. Send a STEP file, get a quote from the person who cuts it." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free shop tools: Fusion Free Deburr, cnckit | Zonum Precision" />
+    <meta name="twitter:description" content="Open-source tools for CNC machinists: Fusion Free Deburr, cnckit, Tool Library Audit." />
+    <meta name="twitter:image" content="https://zonumprecision.com/assets/og.png?v=3" />
+    <meta name="twitter:image:alt" content="Zonum Precision. Send a STEP file, get a quote from the person who cuts it." />
+    <link rel="preload" href="/assets/fonts/familjen-grotesk-400-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/source-serif-4-400-600.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/styles.css?v=41" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://zonumprecision.com/resources#page",
+            "breadcrumb": { "@id": "https://zonumprecision.com/resources#breadcrumb" },
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://zonumprecision.com/#org" },
+            "url": "https://zonumprecision.com/resources",
+            "name": "Free tools",
+            "isPartOf": { "@id": "https://zonumprecision.com/#website" },
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "SoftwareSourceCode",
+                    "name": "Fusion Free Deburr",
+                    "description": "Free 3-axis deburring toolpaths for Autodesk Fusion.",
+                    "codeRepository": "https://github.com/jkkicks/Fusion-Free-Deburr",
+                    "license": "https://opensource.org/license/mit",
+                    "version": "0.1.0-alpha.1",
+                    "isAccessibleForFree": true,
+                    "author": { "@id": "https://zonumprecision.com/#jacob" }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "SoftwareSourceCode",
+                    "name": "cnckit",
+                    "description": "A modular Python framework for job queues, scheduling and simulation around LinuxCNC.",
+                    "codeRepository": "https://github.com/jkkicks/cnckit",
+                    "programmingLanguage": "Python",
+                    "license": "https://opensource.org/license/mit",
+                    "version": "0.2.0",
+                    "isAccessibleForFree": true,
+                    "author": { "@id": "https://zonumprecision.com/#jacob" }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "SoftwareSourceCode",
+                    "name": "Tool Library Audit",
+                    "description": "Export a Fusion tool library as CSV, open the single HTML file in a browser, and print the audit sheet.",
+                    "codeRepository": "https://github.com/jkkicks/Tool-Audit",
+                    "isAccessibleForFree": true
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "item": {
+                    "@type": "SoftwareSourceCode",
+                    "name": "Remix + Drizzle template",
+                    "description": "A starter for web apps: Remix, Drizzle ORM, TypeScript and Docker builds in CI.",
+                    "codeRepository": "https://github.com/jkkicks/Remix-Drizzle-Template",
+                    "isAccessibleForFree": true,
+                    "author": { "@id": "https://zonumprecision.com/#jacob" }
+                  }
+                }
+              ]
+            }
+          },
+          { "@type": "ProfessionalService", "@id": "https://zonumprecision.com/#org", "name": "Zonum Precision", "url": "https://zonumprecision.com/", "email": "jacob@zonumprecision.com" },
+          { "@type": "WebSite", "@id": "https://zonumprecision.com/#website", "url": "https://zonumprecision.com/", "name": "Zonum Precision" },
+          { "@type": "Person", "@id": "https://zonumprecision.com/#jacob", "name": "Jacob", "url": "https://zonumprecision.com/" },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://zonumprecision.com/resources#breadcrumb",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zonumprecision.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Free tools", "item": "https://zonumprecision.com/resources" }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="nav" data-nav>
-      <div class="container nav-inner">
+      <div class="wrap nav-inner">
         <a class="brand" href="/" aria-label="Zonum Precision home">
-          <img src="/assets/favicon.png" alt="" width="30" height="30" />
-          <span class="brand-word">Zonum <span>Precision</span></span>
+          <img src="/assets/zp-logo.png?v=2" alt="Zonum Precision" width="146" height="36" />
         </a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="/#machining">Machining</a></li>
-          <li><a href="/#software">Software</a></li>
-          <li><a href="/resources.html" aria-current="page">Resources</a></li>
-          <li><a href="/#process">How it works</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-        </ul>
+        <nav aria-label="Primary">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="/#machining">CNC machining</a></li>
+            <li><a href="/#process">How it works</a></li>
+            <li><a href="/#software">Software</a></li>
+            <li><a href="/resources" aria-current="page">Free tools</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </nav>
         <div class="nav-cta">
-          <a class="btn btn-primary btn-sm" href="/#contact"><span class="long">Request a quote</span><span class="short">Get a quote</span></a>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu" data-nav-toggle>
-            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <a class="nav-quote" href="/#contact"><span class="long">Request a quote</span><span class="short">Get a quote</span></a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu" data-nav-toggle>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true">
               <path d="M3 6h14M3 10h14M3 14h14" />
             </svg>
           </button>
@@ -49,127 +148,92 @@
       </div>
     </header>
 
-    <main id="main">
-      <section class="page-hero">
-        <div class="container">
-          <p class="eyebrow">Open source</p>
-          <h1>Shop tools I've<br />published</h1>
-          <p class="lead">
-            Software I've written to solve real problems on my own machines, published so other
-            machinists and shop builders don't have to start from scratch. Everything here is free.
-            Bug reports and pull requests are welcome.
-          </p>
+    <main id="main" tabindex="-1">
+      <section class="page-head">
+        <div class="wrap">
+          <h1>Free tools</h1>
+          <p class="lead">Two tools I wrote for my own shop, one I forked and a web-app starter. All free on GitHub. Bug reports and pull requests are welcome.</p>
         </div>
       </section>
 
-      <section class="section" style="padding-top: 8px" aria-label="Resource library">
-        <div class="container">
-          <div class="res-list">
-            <article class="res-row">
-              <div class="res-media">
-                <img src="/assets/deburr-gallery-freeform-pocket.webp" alt="Deburr toolpath following the rim of a freeform pocket in Fusion" loading="lazy" width="1200" height="800" />
-              </div>
-              <div class="res-body">
-                <div class="res-meta"><span class="badge">github.com/jkkicks/Fusion-Free-Deburr · MIT · release v0.1.0-alpha.1, Nov 2026 · alpha — simulate before you cut</span></div>
+      <section class="section" aria-label="Tools">
+        <div class="wrap">
+          <div class="tools">
+            <article class="tool">
+              <div class="tool-name">
                 <h2>Fusion Free Deburr</h2>
-                <p>
-                  Free 3-axis deburring toolpaths for Autodesk Fusion. Select edges, choose a ball or
-                  lollipop end mill, set the edge-break width, and generate. Lollipop mills can reach
-                  undercut rims; the add-in checks the cutter against the part and fixtures before it
-                  writes the toolpath. Right-click an operation and choose Edit Deburr to change it later.
-                </p>
-                <div class="res-links">
-                  <a class="btn btn-primary btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr/releases" target="_blank" rel="noopener">Download</a>
-                  <a class="btn btn-sm" href="https://github.com/jkkicks/Fusion-Free-Deburr" target="_blank" rel="noopener">GitHub</a>
-                </div>
+                <p class="meta">MIT · v0.1.0-alpha.1<br />Alpha: simulate before you cut</p>
+              </div>
+              <div class="tool-body">
+                <p>Free 3-axis deburring toolpaths for Autodesk Fusion. Select edges, choose a ball or lollipop end mill, set the edge-break width, and generate. Lollipop mills reach undercut rims, and the add-in checks the cutter against the part and fixtures before it writes the toolpath. To change an operation later, right-click it and choose Edit Deburr.</p>
+                <p class="tool-links"><a href="https://github.com/jkkicks/Fusion-Free-Deburr/releases" target="_blank" rel="noopener" class="dl">Download<span class="sr-only"> (opens in new tab)</span></a><a href="https://github.com/jkkicks/Fusion-Free-Deburr" target="_blank" rel="noopener" class="ext">GitHub<span class="sr-only"> (opens in new tab)</span></a></p>
               </div>
             </article>
 
-            <article class="res-row res-row--text">
-              <div class="res-body">
-                <div class="res-meta"><span class="badge">github.com/jkkicks/cnckit · MIT · pip install cnckit</span></div>
+            <article class="tool">
+              <div class="tool-name">
                 <h2>cnckit</h2>
-                <p>
-                  A modular Python framework for job queuing, scheduling, and automation around
-                  LinuxCNC. The core has no dependencies — a FIFO/LIFO/priority queue, a scheduler
-                  with pause and resume, and a simulation mode so you can develop away from the
-                  machine. REST, MQTT, WebSocket, and ROS2 integrations are optional installs.
-                </p>
-                <div class="res-links">
-                  <a class="btn btn-primary btn-sm" href="/cnckit/">Read the docs</a>
-                  <a class="btn btn-sm" href="https://github.com/jkkicks/cnckit" target="_blank" rel="noopener">GitHub</a>
-                </div>
+                <p class="meta">Python · LinuxCNC · MIT<br />v0.2.0 · alpha</p>
+              </div>
+              <div class="tool-body">
+                <p>A modular Python framework for job queues, scheduling and simulation around LinuxCNC. The core has no dependencies. The queue runs FIFO, LIFO or by priority, the scheduler can pause and resume, and a simulation mode lets you develop away from the machine. REST, MQTT, WebSocket and ROS2 integrations are optional installs.</p>
+                <p><code class="install">pip install cnckit</code></p>
+                <p class="tool-links"><a href="https://github.com/jkkicks/cnckit" target="_blank" rel="noopener" class="ext">GitHub and docs<span class="sr-only"> (opens in new tab)</span></a></p>
+              </div>
+            </article>
+
+            <article class="tool">
+              <div class="tool-name">
+                <h2>Tool Library Audit</h2>
+                <p class="meta">Fork of jspeceng/Tool-Audit<br />Forked Aug 2026</p>
+              </div>
+              <div class="tool-body">
+                <p>Export a Fusion tool library as CSV, open the single HTML file in a browser, and print the audit sheet.</p>
+                <p class="tool-links"><a href="https://raw.githubusercontent.com/jkkicks/Tool-Audit/main/index.html" target="_blank" rel="noopener" class="dl">Download<span class="sr-only"> (opens in new tab)</span></a><a href="https://github.com/jkkicks/Tool-Audit" target="_blank" rel="noopener" class="ext">View on GitHub<span class="sr-only"> (opens in new tab)</span></a></p>
+              </div>
+            </article>
+
+            <article class="tool">
+              <div class="tool-name">
+                <h2>Remix + Drizzle template</h2>
+                <p class="meta">Template<br />Last updated Nov 2025</p>
+              </div>
+              <div class="tool-body">
+                <p>A starter for web apps: Remix, Drizzle ORM, TypeScript and Docker builds in CI. I start internal apps from it.</p>
+                <p class="tool-links"><a href="https://github.com/jkkicks/Remix-Drizzle-Template" target="_blank" rel="noopener" class="ext">View on GitHub<span class="sr-only"> (opens in new tab)</span></a></p>
               </div>
             </article>
           </div>
 
-          <h2 class="h2-sm" style="margin: 44px 0 6px">Also on GitHub</h2>
-          <div class="also-list">
-            <div class="also-row">
-              <h3>Tool Library Audit</h3>
-              <p>Prints an audit sheet of a Fusion tool library, for checking the library against what's actually in the carousel. Fork of jspeceng/Tool-Audit.</p>
-              <a class="btn btn-sm" href="https://github.com/jkkicks/Tool-Audit" target="_blank" rel="noopener">GitHub</a>
-              <span class="mono">Fork · Updated Aug 2026</span>
-            </div>
-            <div class="also-row">
-              <h3>Remix + Drizzle template</h3>
-              <p>The template I start web apps from when I don't want to redo the same setup: Remix, Drizzle ORM, TypeScript, Docker builds in CI.</p>
-              <a class="btn btn-sm" href="https://github.com/jkkicks/Remix-Drizzle-Template" target="_blank" rel="noopener">GitHub</a>
-              <span class="mono">Updated Nov 2025</span>
-            </div>
-          </div>
-
-          <p class="note-line">
-            Missing a tool? If a Fusion workflow or a bit of shop software is costing you time,
-            <a href="mailto:jacob@zonumprecision.com" class="text-orange">email me</a> — if it's
-            useful beyond my shop, it may end up here.
-          </p>
+          <p class="note-line">Need something these do not do? Custom Fusion or LinuxCNC work, internal apps and repo cleanups are paid projects: <a href="/?mode=software#contact">request a software quote</a>. Have a tool idea? <a href="mailto:jacob@zonumprecision.com">Email me</a>.</p>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a class="brand" href="/"><img src="/assets/favicon.png" alt="" width="30" height="30" /><span class="brand-word">Zonum <span>Precision</span></span></a>
-            <p>CNC machined parts and shop software from a one-person shop.</p>
-          </div>
-          <div>
-            <h4>Services</h4>
-            <ul>
-              <li><a href="/#machining">CNC machining</a></li>
-              <li><a href="/#software">Vibe code cleanups</a></li>
-              <li><a href="/#software">Shop software</a></li>
-              <li><a href="/#process">How it works</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="/cnckit/">cnckit docs</a></li>
-              <li><a href="https://github.com/jkkicks/Fusion-Free-Deburr" target="_blank" rel="noopener">Fusion Free Deburr</a></li>
-              <li><a href="/resources.html">All resources</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="mailto:jacob@zonumprecision.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"/></svg>Email</a></li>
-              <li><a href="https://www.instagram.com/zonumprecision" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a></li>
-              <li><a href="https://github.com/jkkicks" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>GitHub</a></li>
-              <li><a href="https://subtractmanufacturing.com" target="_blank" rel="noopener">Subtract network</a></li>
-            </ul>
-          </div>
+    <footer class="footer dark">
+      <div class="wrap">
+        <div class="footer-top">
+          <img src="/assets/zp-logo-light.png?v=3" alt="Zonum Precision" width="190" height="47" loading="lazy" />
+          <p>CNC machined parts and shop software from a one-person shop.</p>
         </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="/#machining">CNC machining</a>
+          <a href="/#process">How it works</a>
+          <a href="/#software">Software</a>
+          <a href="/resources">Free tools</a>
+          <a href="/#faq">FAQ</a>
+          <a href="https://github.com/jkkicks" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in new tab)</span></a>
+          <a href="https://www.instagram.com/zonumprecision" target="_blank" rel="noopener">Instagram<span class="sr-only"> (opens in new tab)</span></a>
+          <a href="https://subtractmanufacturing.com" target="_blank" rel="noopener">Subtract Manufacturing<span class="sr-only"> (opens in new tab)</span></a>
+        </nav>
         <div class="footer-bottom">
           <span>© <span data-year>2026</span> Zonum Precision</span>
-          <span>Measure twice, cut once.</span>
+          <span>jacob@zonumprecision.com</span>
         </div>
       </div>
     </footer>
 
     <div class="toast" role="status" aria-live="polite" data-toast></div>
-    <script src="/assets/main.js?v=7" defer></script>
+    <script src="/assets/main.js?v=30" defer></script>
   </body>
 </html>

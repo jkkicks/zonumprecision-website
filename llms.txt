@@ -1,0 +1,20 @@
+# Zonum Precision
+
+> One-person shop run by Jacob. Prototype and short-run CNC machining, plus fixed-scope shop software. The person who quotes a job programs, cuts and inspects it. Contact: jacob@zonumprecision.com
+
+## Services
+- [CNC machining](https://zonumprecision.com/#machining): CNC milling, 3-axis and multi-op setups, custom fixturing. 6061/7075 aluminum, steels, stainless, brass, Delrin/acetal, UHMW. Quoted from a STEP file and PDF drawing; manufacturability feedback comes in the quote, before payment.
+- [Software projects](https://zonumprecision.com/#software): cleanup of AI-built apps, LinuxCNC/Fusion automation, web apps and internal tools, code review. Fixed scope, quoted per project.
+- [How it works](https://zonumprecision.com/#process)
+- [FAQ](https://zonumprecision.com/#faq)
+
+## Free tools
+- [Free tools index](https://zonumprecision.com/resources)
+- [Fusion Free Deburr](https://github.com/jkkicks/Fusion-Free-Deburr): deburring toolpaths for Autodesk Fusion, MIT, alpha
+- [cnckit](https://github.com/jkkicks/cnckit): Python framework for LinuxCNC job queues, MIT, alpha
+- [Tool Library Audit](https://github.com/jkkicks/Tool-Audit): fork of jspeceng/Tool-Audit
+- [Remix + Drizzle template](https://github.com/jkkicks/Remix-Drizzle-Template): starter for web apps
+
+## Optional
+- [GitHub](https://github.com/jkkicks)
+- [Instagram](https://www.instagram.com/zonumprecision)

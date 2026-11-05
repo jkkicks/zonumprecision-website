@@ -1,0 +1,12 @@
+.git
+.wrangler
+worker
+wrangler.jsonc
+.assetsignore
+CNAME
+node_modules
+package.json
+package-lock.json
+.agents
+.claude
+skills-lock.json

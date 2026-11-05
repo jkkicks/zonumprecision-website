@@ -26,7 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/styles.css?v=3" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -71,7 +71,7 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-grid">
-          <div>
+          <div class="hero-copy">
             <h1>
               <span class="line">Parts cut by the</span>
               <span class="line">person who</span>
@@ -101,12 +101,12 @@
 
           <div class="hero-visual">
             <figure class="hero-photo-main">
-              <img src="/assets/deburr-gallery-ridge-saddle-holes.webp" alt="Deburr toolpaths tracing holes drilled into a curved ridge, generated in Autodesk Fusion" width="1200" height="800" />
-              <figcaption>Edge-break toolpaths from Fusion Free Deburr, my open-source Fusion add-in.</figcaption>
-            </figure>
-            <figure class="hero-photo-small">
               <img src="/assets/coolant.webp" alt="An end mill cutting a part under flood coolant" width="1800" height="1202" />
               <figcaption>Prototype and short-run work, programmed in Fusion.</figcaption>
+            </figure>
+            <figure class="hero-photo-small">
+              <img src="/assets/deburr-gallery-ridge-saddle-holes.webp" alt="Deburr toolpaths tracing holes drilled into a curved ridge, generated in Autodesk Fusion" width="1200" height="800" />
+              <figcaption>Edge-break toolpaths from Fusion Free Deburr, my open-source add-in.</figcaption>
             </figure>
           </div>
         </div>
@@ -591,6 +591,6 @@
     </footer>
 
     <div class="toast" role="status" aria-live="polite" data-toast></div>
-    <script src="/assets/main.js" defer></script>
+    <script src="/assets/main.js?v=3" defer></script>
   </body>
 </html>

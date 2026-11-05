@@ -348,7 +348,11 @@ h3 {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   gap: 56px;
-  align-items: center;
+  align-items: start;
+}
+
+.hero-copy {
+  padding-top: 24px;
 }
 
 .hero h1 {
@@ -1607,6 +1611,7 @@ h3 {
 .hero-photo-main img,
 .hero-photo-small img {
   width: 100%;
+  height: auto;
   object-fit: cover;
   border: 1px solid var(--line-2);
   border-radius: var(--radius);
@@ -1654,6 +1659,7 @@ h3 {
 
 .gallery img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -1668,6 +1674,7 @@ h3 {
 
 .about-img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -1736,6 +1743,14 @@ h3 {
 
   .hero-grid {
     gap: 48px;
+  }
+
+  .hero-copy {
+    padding-top: 0;
+  }
+
+  .hero-visual {
+    max-width: 620px;
   }
 
 

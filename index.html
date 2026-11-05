@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zonum Precision Â· Precision CNC Parts &amp; Precision Software</title>
+    <title>Zonum Precision · Precision CNC Parts &amp; Precision Software</title>
     <meta
       name="description"
       content="Zonum Precision machines precision CNC parts through the Subtract Manufacturing network and builds precision software: vibe code cleanups, shop automation, and open-source CNC tools like cnckit and Fusion Free Deburr."
@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://zonumprecision.com/" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zonum Precision Â· Precision parts. Precision code." />
+    <meta property="og:title" content="Zonum Precision · Precision parts. Precision code." />
     <meta
       property="og:description"
       content="CNC-machined components and production-grade software from one engineer who does both."
@@ -101,7 +101,7 @@
 
           <div class="drawing" aria-label="Illustration: an engineering drawing of a machined bracket with a toolpath being cut, next to a code snippet" role="img">
             <div class="drawing-bar">
-              <span><b>ZP-0417</b> Â· Bracket, pocketed</span>
+              <span><b>ZP-0417</b> · Bracket, pocketed</span>
               <span>Op 1 / 2</span>
             </div>
             <svg viewBox="0 0 500 440" fill="none" aria-hidden="true">
@@ -150,14 +150,14 @@
                 <path d="M370 80l34-36h82" />
               </g>
               <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#c4ccd6">
-                <text x="406" y="38">4X Ã˜.250 THRU</text>
+                <text x="406" y="38">4X Ø.250 THRU</text>
               </g>
               <g font-family="IBM Plex Mono, monospace" font-size="10.5">
                 <rect x="404" y="52" width="88" height="20" stroke="#6b7582" />
                 <path d="M424 52v20M466 52v20" stroke="#6b7582" />
                 <circle cx="414" cy="62" r="5" stroke="#c4ccd6" />
                 <path d="M408 62h12M414 56v12" stroke="#c4ccd6" stroke-width="0.8" />
-                <text x="428" y="66" fill="#c4ccd6">Ã˜.005</text>
+                <text x="428" y="66" fill="#c4ccd6">Ø.005</text>
                 <text x="472" y="66" fill="#c4ccd6">A B</text>
               </g>
 
@@ -184,7 +184,7 @@
               <div><span class="c-c"># cnckit: queue the next op</span></div>
               <div>queue.<span class="c-k">add</span>(<span class="c-s">"zp-0417_op2.ngc"</span>)</div>
               <div>scheduler.<span class="c-k">run_forever</span>()</div>
-              <div><span class="c-ok">âœ“</span> op1 complete <span class="c-c">Â· 0 alarms</span></div>
+              <div><span class="c-ok">✓</span> op1 complete <span class="c-c">· 0 alarms</span></div>
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <p class="eyebrow">01 Â· Machining</p>
+              <p class="eyebrow">01 · Machining</p>
               <h2 id="machining-title">Parts that measure<br />the way they're drawn.</h2>
             </div>
             <p class="lead">
@@ -349,7 +349,7 @@
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <p class="eyebrow is-blue">02 Â· Software</p>
+              <p class="eyebrow is-blue">02 · Software</p>
               <h2 id="software-title">Software held to<br /><span class="text-blue">shop-floor tolerances.</span></h2>
             </div>
             <p class="lead">
@@ -401,24 +401,24 @@
             <div class="terminal reveal" aria-label="Example output of a vibe code cleanup audit" role="img">
               <div class="terminal-bar"><i></i><i></i><i></i><span>zonum audit ./your-app</span></div>
 <pre aria-hidden="true"><span class="t-dim">$</span> <span class="t-wht">zonum audit ./your-app</span>
-<span class="t-dim">scanning 214 filesâ€¦</span>
+<span class="t-dim">scanning 214 files…</span>
 
-<span class="t-red">âœ— CRIT</span>  API keys committed in <span class="t-yel">src/lib/config.ts</span>
-<span class="t-red">âœ— CRIT</span>  Auth check missing on <span class="t-yel">/api/admin/*</span>
+<span class="t-red">✗ CRIT</span>  API keys committed in <span class="t-yel">src/lib/config.ts</span>
+<span class="t-red">✗ CRIT</span>  Auth check missing on <span class="t-yel">/api/admin/*</span>
 <span class="t-yel">! HIGH</span>  3 copies of the same fetch wrapper
 <span class="t-yel">! HIGH</span>  No tests on checkout flow
-<span class="t-blu">Â· MED </span>  Unpinned deps, no lockfile in CI
-<span class="t-blu">Â· MED </span>  Errors swallowed in 11 places
+<span class="t-blu">· MED </span>  Unpinned deps, no lockfile in CI
+<span class="t-blu">· MED </span>  Errors swallowed in 11 places
 
-<span class="t-dim">â”€â”€ after cleanup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€</span>
-<span class="t-grn">âœ“</span> secrets rotated &amp; moved to env
-<span class="t-grn">âœ“</span> auth middleware on every route
-<span class="t-grn">âœ“</span> 46 tests Â· CI green Â· deploy scripted
-<span class="t-grn">âœ“</span> handoff doc: how it works, what's next</pre>
+<span class="t-dim">── after cleanup ──────────────────</span>
+<span class="t-grn">✓</span> secrets rotated &amp; moved to env
+<span class="t-grn">✓</span> auth middleware on every route
+<span class="t-grn">✓</span> 46 tests · CI green · deploy scripted
+<span class="t-grn">✓</span> handoff doc: how it works, what's next</pre>
               <div class="steps-inline">
-                <div><b>1 Â· Audit</b>Read everything, rank the risks</div>
-                <div><b>2 Â· Stabilize</b>Fix, test, and automate</div>
-                <div><b>3 Â· Hand back</b>Docs and a walkthrough</div>
+                <div><b>1 · Audit</b>Read everything, rank the risks</div>
+                <div><b>2 · Stabilize</b>Fix, test, and automate</div>
+                <div><b>3 · Hand back</b>Docs and a walkthrough</div>
               </div>
             </div>
           </div>
@@ -430,7 +430,7 @@
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <p class="eyebrow">Resources Â· Open source</p>
+              <p class="eyebrow">Resources · Open source</p>
               <h2 id="resources-title">Tools I've built<br />and give away.</h2>
             </div>
             <p class="lead">
@@ -675,7 +675,7 @@ Scheduler(m, q).run_forever()</pre>
 
               <div class="field is-full">
                 <label for="f-msg">Project details</label>
-                <textarea id="f-msg" name="message" placeholder="Tell me about the part or project. Critical tolerances, deadlines, what's brokenâ€¦"></textarea>
+                <textarea id="f-msg" name="message" placeholder="Tell me about the part or project. Critical tolerances, deadlines, what's broken…"></textarea>
               </div>
             </div>
             <div class="form-foot">
@@ -725,7 +725,7 @@ Scheduler(m, q).run_forever()</pre>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>Â© <span data-year>2026</span> Zonum Precision</span>
+          <span>© <span data-year>2026</span> Zonum Precision</span>
           <span>Measured twice. Cut once. Shipped clean.</span>
         </div>
       </div>
